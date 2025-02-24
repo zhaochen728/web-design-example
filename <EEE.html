@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HKU EEE</title>
+</head>
+<body>
+    <header>
+        <video autoplay muted loop id="header-video">
+            <source src="EEE.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="header-content">
+           <img src="HKEEE.png" alt="Logo" id="logo">
+            <nav>
+                <ul>
+                    <li><a href="About.html" id="About">About</a></li>
+                    <li><a href="#Study">Study</a></li>
+                    <li><a href="#People">People</a></li>
+                    <li><a href="#Research">Research</a></li>
+                    <li><a href="#News">News</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="circle circle-small circle-1"></div>
+    <div class="circle circle-medium circle-2"></div>
+    <div class="circle circle-large circle-3"></div>
+    <div class="circle circle-small circle-4"></div>
+
+  
+
+    <section id="academics">
+        <div class="section-content">
+            <h2>Academics</h2>
+            <div class="dynamic-line"></div>
+            <p>Insert academic programs information here...</p>
+        </div>
+    </section>
+   
+    <section id="image-slider">
+        <div class="slider">
+            <div class="slider-content">
+                <input type="radio" name="slide" id="slide1" checked>
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+    
+                <div class="slide slide-1" style="background-image: url('0_2.jpg')"></div>
+                <div class="slide slide-2" style="background-image: url('chen_89930_7w_instagram_user_called_logo_EEE_made_of_words_no_bb349e25-1b83-40b9-b5ca-32439b6b9f2a_3.png')"></div>
+                <div class="slide slide-3" style="background-image: url('chen_89930_the_AI_with_the_data_3w_7a085656-8ecb-43f8-8493-cdbb34cbde88.webp')"></div>
+    
+                <div class="navigation">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>What's News</h2>
+        <div class="dynamic-line"></div>
+    </section>
+    
+    <!-- Add your exhibition sections here -->
+    <section id="exhibition">
+        <div class="section-content2">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="picture1.png" alt="Exhibition 1">
+                    <p>News & Achievements Highlight
+                        [4 Oct] A Teaching Team Led by Dr. Albert T. L. Lee and Dr. Sam K.H. Lam Wins Faculty Outstanding Teaching Award (Team Award) - Teaching Innovations in E-learning
+                        [4 Oct] HKU Research Team Led by Prof. Victor O.K. Li and Prof. Jacqueline C.K. Lam Wins the US National Academy of Medicine Healthy Longevity Catalyst Award 2024
+                        [3 Oct] “Next-generation Information Engineering Technologies as New Quality Productivity Technologies” Joint Press Conference by HKU and Chinese Academy of Engineering
+                        More >>></p>
+                </div>
+                <div class="grid-item">
+                    <img src="Gradient-Colorful-Minimalist-Coming-Soon-Banner2-1-705x360.png" alt="Exhibition 2">
+                    <p>Prof. Kazuhiro Kosuge and His Research Team Wins Multiple Awards in 2024
+                        We are thrilled to announce that Prof. Kazuhiro Kosuge in the Department of Electrical and Electronic Engineering 
+                        at The University of Hong Kong (HKU), and his innovative research teams have won multiple...</p>
+                </div>
+                <div class="grid-item">
+                    <img src="33333-705x360.png" alt="Exhibition 3">
+                    <p>HKU Engineering Research Team Develops A Van Der Waals Interfacial Junction Transistor for 
+                        Reconfigurable Fuzzy Logic Hardware</p>
+                </div>
+                <div class="grid-item">
+                    <img src="Prof.-Ron-S.Y.-Hui-2-1536x783.png" alt="Exhibition 4">
+                    <p>Prof. Ron S.Y. Hui Wins J J Thomson Medal from The Institution of Engineering and Technology (IET), UK
+                    </p>
+                </div>
+                <div class="grid-item">
+                    <img src="cover-1-copy-705x360.jpg" alt="Exhibition 5">
+                    <p>HKU Engineering Team Develops Next-generation Wearable Continuous Glucose Monitoring System for Diabetes Management</p>
+                </div>
+                <div class="grid-item">
+                    <img src="exhibition6.jpg" alt="Exhibition 6">
+                    <p>Description for Exhibition 6</p>
+                </div>
+                <div class="grid-item">
+                    <img src="exhibition7.jpg" alt="Exhibition 7">
+                    <p>Description for Exhibition 7</p>
+                </div>
+                <div class="grid-item">
+                    <img src="exhibition8.jpg" alt="Exhibition 8">
+                    <p>Description for Exhibition 8</p>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2021 School Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+<style>
+body {
+    font-family:"Poppins", serif;
+    margin: 10px;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+header {
+    position: relative;
+}
+
+#header-video {
+    width: 100%;
+    height: auto;
+}
+
+.header-content {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This will push the logo and nav apart */
+    width: 100%; /* This will stretch the header-content across the full width of the header */
+}
+.logo {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration:none;
+}
+
+section {
+    background-size: cover;
+    background-position: center;
+    color: #050505;
+    text-align: center;
+    padding: 50px 0;
+    background-color: rgb(247, 248, 248);
+    position: relative; /* Make sure section is the positioning context for the circles */
+}
+
+.section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-about{
+    background-color: rgb(246, 241, 226);
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.mission-wrapper .image3 {
+    flex: 1;
+    text-align: right;
+    border-radius: 10px
+}
+
+.mission-wrapper .text {
+    flex: 1;
+    padding: 15px;
+    text-align: left;
+}
+
+
+.text {
+    flex: 1;
+    padding: 15px;
+    text-align: right;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px
+}
+
+
+
+
+
+.image3 img {
+    width: 80%; /* Increase the width as per your requirements */
+    height: auto;
+    border-radius: 10px
+}
+
+.text {
+    flex: 1;
+    padding: 10px;
+    text-decoration:none;
+    text-align: center;
+    
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Add light green border to every <p> element */
+p {
+    font-family:"Poppins", serif;
+    border: 10px solid rgb(191, 222, 234);
+    padding: 30px;
+    margin: 30px 0;
+    background-color: rgb(229, 237, 250);
+    font-style:normal;
+    text-decoration: #717171;
+    font-size:medium;
+    font-weight:200;
+}
+
+/* Dynamic line under h2 */
+.dynamic-line {
+    width: 0;
+    height: 10px;
+    background-color: rgb(203, 208, 210);
+    transition: width 0.8s;
+}
+.h2{
+    text-decoration: dotted;
+}
+
+h2:hover + .dynamic-line {
+    width: 100%;
+}
+
+/* Blue circles for background decoration */
+.circle {
+    position: absolute;
+    border-radius: 20%;
+    background-color: lightblue;
+    opacity: 0.5;
+    z-index: -1; /* Ensure circles are behind content */
+}
+
+.circle-small {
+    width: 50px;
+    height: 50px;
+}
+
+.circle-medium {
+    width: 100px;
+    height: 100px;
+}
+
+.circle-large {
+    width: 150px;
+    height: 150px;
+}
+
+/* Position circles */
+.circle-1 {
+    top: 100px;
+    left: 50px;
+}
+
+.circle-2 {
+    top: 300px;
+    right: 70px;
+}
+
+.circle-3 {
+    bottom: 200px;
+    left: 150px;
+}
+
+.circle-4 {
+    bottom: 50px;
+    right: 100px;
+}
+
+/* Grid layout for exhibition sections */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.slider {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+}
+
+.slider-content {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 15s infinite;
+}
+
+.slider-content input {
+    display: none;
+}
+
+.slide {
+    width: calc(100% / 3);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.navigation label {
+    margin: 0 2px;
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#slide1:checked ~ .navigation label:nth-child(1),
+#slide2:checked ~ .navigation label:nth-child(2),
+#slide3:checked ~ .navigation label:nth-child(3) {
+    background-color: #717171;
+}
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    33% { margin-left: -100%; }
+    53% { margin-left: -100%; }
+    67% { margin-left: -200%; }
+    87% { margin-left: -200%; }
+    100% { margin-left: 0; }
+}
+
+.section-content2 {
+    position: relative;
+    background-color: #cbe2ec; /* Nude color background */
+    padding: 100px 0;
+    overflow: hidden; /* Ensure pseudo-elements don't overflow */
+}
+
+
+
+
+
+</style>
