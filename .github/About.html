@@ -1,0 +1,273 @@
+
+<body>
+    <nav>
+        <li><a href="About.html" id="About">About</a></li>
+        <li><a href="#Study">Study</a></li>
+        <li><a href="#People">People</a></li>
+        <li><a href="#Research">Research</a></li>
+        <li><a href="#News">News</a></li>
+        <li><a href="#Contact">Contact</a></li>
+
+    </nav>
+</body>
+<section>
+ <header>
+    <h2>About Our School</h2>
+    <div class="dynamic-line"></div>
+</header>      
+</section>
+
+
+
+<section id="about">
+    
+        <div class="content-wrapper">
+            <div class="text">
+                <p>The Department of Electrical and Electronic Engineering (EEE) was established in late fifties as a major department in the Faculty of Engineering at the University of Hong Kong. 
+                    The EEE Department has naturally progressed with time and has grown from the relatively obscured location along Pokfulam Road to the current modern high rise of the Chow Yei Ching Building (map), with numerous satellite laboratories located as well at the Haking Wong Building, Yam Pak Building and Composite Building.</p>
+            </div>
+            <div class="image">
+                <img src="Picture2.png" alt="About Image">
+            </div>
+        </div>
+    
+</section>
+
+
+
+<div class="circle circle-small circle-1"></div>
+<div class="circle circle-medium circle-2"></div>
+<div class="circle circle-large circle-3"></div>
+<div class="circle circle-small circle-4"></div>
+
+<section>
+    <header>
+    <h2>Our Mission </h2>
+    </header>
+    <div class="dynamic-line"></div>
+</section>
+<section id="about3">
+    
+        <div class="mission-wrapper content-wrapper">
+            <div class="text">
+                <p>The Department of Electrical and Electronic Engineering (EEE) was established in late fifties as a major department in the Faculty of Engineering at the University of Hong Kong. 
+                    Its graduates served the society since 1961 and have been making tremendous impact to the well being and development of Hong Kong in her infancy years. Over the years, power systems, 
+                    electronic, computers and information processing have evolved at dazzling speed, and have permeated to every aspects of life and the society at large.
+
+                    </p>
+            </div>
+            <div class="image">
+                <img src="picture4.png" alt="About Image">
+            </div>
+        </div>
+    
+</section> 
+
+<section id="academics">
+    
+        <h2>Academics</h2>
+        <div class="dynamic-line"></div>
+        <p>Insert academic programs information here...</p>
+    
+</section>
+
+<footer>
+    <h3>&copy; 2021 School Name. All Rights Reserved.>
+</footer>
+
+<style>
+    header{
+        width: 100%;
+        margin: 0%;
+        padding: 30px;
+       
+        background-image: url(background\ .webp);
+        background-position: center;
+        background-size: cover;
+        position:relative;
+
+    }
+    body {
+        font-family:"Poppins", serif;
+        margin: 10px;
+        padding: 0;
+        position: relative;
+        overflow-x: hidden;
+       
+    }
+    
+    /* Blue navigation bar */
+nav {
+    background-color: rgb(6, 156, 226); /* Blue color */
+    display:flex;
+    justify-content:center;
+    width: 100vw;
+    height: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light blue background on hover */
+}
+    
+    section {
+        background-size: cover;
+        background-position: center;
+        color: #3d3d3d;
+        text-align: center;
+        padding:0;
+       
+        position:relative; /* Make sure section is the positioning context for the circles */
+        
+      
+    }
+    section h2{
+        color: #1090da;
+    }
+    
+
+    
+    
+
+
+.image img {
+    max-width: 100%; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.image3 img {
+    width: 50%; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 10px;
+    text-align: left; /* Align image to the left */
+}
+
+.content-wrapper {
+    display:flex; /* Display text and image side by side */
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.content-wrapper .image {
+    display: flex;
+    flex: 0.5;
+    margin-left: 20px;
+}
+
+.content-wrapper .text {
+    display: flex;
+    flex: 0.5;
+}
+
+/* Add light green border to every <p> element */
+p {
+    padding: 20px; /* Adjust the padding as needed */
+    font-family:"Poppins", serif;
+    font-style: normal;
+    text-decoration: #070707;
+    font-size: medium;
+    font-weight: 100;
+    text-align: left; /* Align text to the right */
+    background-color: rgb(242, 249, 253);
+   
+    
+  
+  border-radius: 10px; /* Rounded corners */
+
+  position: relative;
+  border-top: 2px solid #ccc; /* Top border for the half border effect */
+  border-radius: 0 0 10px 10px; /* Rounded corners for the bottom border */
+  position: relative; /* Positioning context for the dots */
+  padding: 20px; /* Add padding inside the <p> */
+
+   
+}
+    
+}
+/* Half border around <p> with five dots */
+
+
+p::before {
+  content: '';
+  position: absolute;
+  top: -5px; /* Position above the top border */
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc; /* Color of the dots */
+  border-radius: 50%; /* Rounded shape for the dots */
+}
+
+p::after {
+  content: '';
+  position: absolute;
+  top: -5px; /* Position above the top border */
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc; /* Color of the dots */
+  border-radius: 50%; /* Rounded shape for the dots */
+}
+    
+   
+   
+    
+   
+    
+    /* Dynamic line under h2 */
+    .dynamic-line {
+        width: 0;
+        height: 10px;
+        background-color: rgb(6, 156, 226);
+        transition: width 0.8s;
+    }
+   
+    
+    h2:hover + .dynamic-line {
+        width: 100%;
+    }
+    
+    /* Blue circles for background decoration */
+    .about circle {
+        position:absolute;
+        border-radius: 50%;
+        background-color: lightblue;
+        opacity: 0.5;
+        z-index: -1; /* Ensure circles are behind content */
+        display: inline-block;
+        margin: 20px; ;
+
+        
+    }
+    
+    .circle-small {
+        width: 50px;
+        height: 50px;
+        position: relative;
+    }
+    
+   
+    footer {
+         background-color: rgb(6, 156, 226);
+         color: white;
+         text-align: center;
+         padding: 2px;
+         height: 60px;
+   
+    }
+   
+
+    #about3 {
+        display: flex;
+    }
+    
+    
+    
+    </style>
